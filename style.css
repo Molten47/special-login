@@ -67,6 +67,7 @@ button:hover{
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    gap: 20px;  
 }
 p{
     color: var(--white);
@@ -89,4 +90,13 @@ i{
 }
 .neon3{
     border-radius: 41% 44% 56% 59% / 38% 63% 63% %;
+}
+.remember-me label{
+    color: var(--white);
+    text-wrap: nowrap;
+    margin-left: 0.7rem;
+}
+.remember-me{
+    display: flex;
+    flex-direction: row;
 }
