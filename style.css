@@ -1,0 +1,92 @@
+:root{
+    --yellow:#fffd44;
+    --green:#00ff0a;
+    --purple:#ff0057;
+    --white:#fff;
+    --black: #111
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    align-items: center;
+    background-color: var(--black);
+}
+form{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.login{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1;
+}
+h1{
+    font-size: 2em;
+    color: var(--white);
+}
+input{
+    width: 100%;
+    padding: 12px 20px;
+    background: transparent;
+    border: 2px solid var(--white);
+    border-radius: 40px;
+    outline: none;
+    font-size: 1.2em;
+    color: var(--white);
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.75);
+}
+button{
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 40px;
+    border: none;
+    font-size: 1.2em;
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.5s;
+    background: linear-gradient(45deg, var(--purple), var(--yellow));
+}
+button:hover{
+    filter: drop-shadow(0 0 5px var(--yellow));
+}
+.soln-links{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+p{
+    color: var(--white);
+}
+p:hover{
+    color: var(--yellow);
+}
+
+i{
+    position:absolute;
+    border: 2px solid var(--white);
+    inset: 0;
+    transition: 0.5s;
+}
+.neon1{
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+}
+.neon2{
+    border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+}
+.neon3{
+    border-radius: 41% 44% 56% 59% / 38% 63% 63% %;
+}
